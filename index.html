@@ -1,0 +1,163 @@
+<!-- 
+    esto es un comentario
+ -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--NO SE VE-->
+<head>
+    <title>Bootcamp Comafi - HTML</title>
+    <!-- estilos interno -->
+    <style>
+        /* OJO: esto es css, NO html */
+        /*estilo de etiqueta */
+        header {
+            /*vamos a poner los estilos que afectan a la etiqueta header*/
+            background-color: black;
+            color:white;
+        }
+        /*el elemento p que esta dentro de header*/
+
+        /*regla*/
+        header p {
+            /*atributo: valor*/
+            color: yellow;
+            /*bloque de declaración*/
+        }
+
+        header h1 {
+            color: green !important;
+        }
+        
+        /*id*/
+        #segundo_parrafo {
+            color:blueviolet;
+        }
+    </style>
+
+    <!-- 3 forma: externa-->
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+
+<!-- LO QUE SE VE-->
+<body>
+    <!-- etiquetas semanticas-->
+    <header>
+        <h1 style="color:red;font-size: 50px;font-weight: normal;">Mundial Qatar 2022</h1>
+        <p>
+            Soy un párrafo
+        </p>
+        <p id="segundo_parrafo">
+            Soy el segundo párrafo
+        </p>
+    </header>
+    <nav>
+        <!-- menu del sitio-->
+        <ul>
+            <!--enlaces-->
+            <li>
+                <a>Link a una pagina.html</a>
+            </li>
+            <li>
+                <a href="./about.html">
+                    Sobre Nosotros
+                </a>
+            </li>
+            <li>
+                <a href="./pages/etiquetas.html">
+                    Etiquetas B&aacute;sicas
+                </a>
+            </li>
+            <li>
+                <a href="./pages/formularios.html">
+                    Formularios
+                </a>
+            </li>
+            <li>
+                <a href="./pages/css.html">
+                    CSS
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!--contenido principial de documento-->
+        <!--
+            <h2>Lo mas divertido</h2>
+            <h3>Lo mas divertido</h3>
+            <h4>Lo mas divertido</h4>
+            <h5>Lo mas divertido</h5>
+            <h6>Lo mas divertido</h6>
+            -->
+        <section>
+            <h2>Selecciones</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, impedit, provident perspiciatis officia dolor obcaecati quisquam ab id eos eaque cumque iste doloribus cum maxime dicta unde nostrum, eius nam.
+            </p>
+        </section>
+        <section>
+            <h2>Jugadores</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, impedit, provident perspiciatis officia dolor obcaecati quisquam ab id eos eaque cumque iste doloribus cum maxime dicta unde nostrum, eius nam.
+            </p>
+        </section>
+        <section id="secArbitros">
+            <h2>Arbitros</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, impedit, provident perspiciatis officia dolor obcaecati quisquam ab id eos eaque cumque iste doloribus cum maxime dicta unde nostrum, eius nam.
+            </p>
+        </section>
+        <article>
+            <h3>Opiniones de ex jugadores.</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime minus atque amet rem id, ratione expedita alias excepturi saepe praesentium sunt ut facere consequuntur nam, similique dicta asperiores reprehenderit laboriosam.
+            </p>
+        </article>
+        <article>
+            <h3>Im&aacute;genes</h3>
+            <!--local: relativa-->
+            <img src="./imgs/lossimpson.jpg"
+                height="25%"
+                width="25%">
+            <img src="./imgs/lossimpson.jpg"
+                height="25%"
+                width="25%">
+            <!--remota: absoluta-->
+            <img src="https://unicanal.com.py/wp-content/uploads/2022/08/61c9ae1647d7c3d24f7316d1.jpeg"
+                alt="homero sancado roja"
+                width="25%"
+                height="auto">
+        </article>      
+    </main>
+    <aside>
+        <h3>Soponsor</h3>
+        <p>Coca Cola, etc</p>
+    </aside>
+
+    <footer>
+        <!--lista no ordenada-->
+        <ul>
+            <h4>Secciones</h4>
+            <!--list items-->
+            <li>
+                <p>Sobre Nosotros</p>
+            </li>
+            <li>
+                <a href="./vision.html">Vision</a>
+            </li>
+        </ul>
+        <!-- listado ordenada-->
+        <ol>
+            <h4>Secciones</h4>
+            <li>
+                <p>Sec1</p>
+            </li>
+            <li>
+                <p>Sec2</p>
+            </li>
+        </ol>
+    </footer>
+</body>
+
+</html>

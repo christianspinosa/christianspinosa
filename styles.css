@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*
+    todo es css
+*/
+
+/*
+    crear una clase:
+
+    .nombreDeLaClase {
+        atributo: valor;
+        atribut2:valor;        
+        atrx:valorx;
+    }
+
+*/
+
+/*
+Selector por etiqueta: Afecta a todos los section
+*/
+section {
+    background-color: beige;
+}
+/*
+Selector por ID:
+*/
+#secArbitros {
+    /* background-color: blue; */
+    /*background-color: #f23838;*/
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    font-size: 20px;  /*fijos: px |relativos*/
+    font-weight: 300;    
+    /* font-family: Courier, monospace; */
+    font-family: 'Ubuntu', sans-serif;
+    font-style: unset;
+}
+/*
+ 0 -> !important
+ 1 -> etiqueta : inline
+ 2 -> #id
+ 3 -> clase
+*/

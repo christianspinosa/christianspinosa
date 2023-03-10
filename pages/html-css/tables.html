@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 21-12-22 html</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tablas</h1>
+            <!--un div es una caja-->
+            <div>
+                <!--no debe haber dos id en la misma p&aacute;gina-->
+                <table id="mitabla" border="1">
+                    <!--head-->
+                    <tr>
+                        <th>
+                            ID                  
+                        </th>
+                        <th>
+                            Precio
+                        </th> 
+                       <th>
+                            Col3
+                       </th>
+                       <th>
+                            &nbsp;
+                       </th>
+                    </tr>
+                    <!--body-->
+                    <tbody>
+                        <!--fila 1-->
+                        <tr>
+                            <!--celda-->
+                            <td>
+                                fila1 celda 1 col1
+                            </td>
+                            <td>
+                                1500
+                            </td>
+                            <td>
+                                fila1, celda 3, col 3
+                            </td>
+                            <td>
+                                Edit | Delete
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--celda-->
+                            <td>
+                                fila2 celda 1 col1
+                            </td>
+                            <td>
+                                1500
+                            </td>
+                            <td>
+                                fila2, celda 3, col 3
+                            </td>
+                            <td>
+                                Edit | Delete
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--celda-->
+                            <td>
+                                fila2 celda 1 col1
+                            </td>
+                            <td>
+                                1500
+                            </td>
+                            <td>
+                                fila2, celda 3, col 3
+                            </td>
+                            <td>
+                                <a href="#">Edit</a> | 
+                                <button>
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--celda-->
+                            <td colspan="3">
+                                fila4 celda 1 col1
+                            </td>
+                            <td>
+                                fils4 celda 2 col vacia
+                            </td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td align="center">
+                                    Total  $
+                                </td>
+                                <td colspan="3">
+                                    $4500
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

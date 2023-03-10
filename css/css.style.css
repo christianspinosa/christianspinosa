@@ -1,0 +1,90 @@
+/*selector universal*/
+* {
+    margin: 0px;
+    padding: 0px;
+    /*font-size: 20px; base*/
+    /*16px*/
+}
+
+body {
+    background-color: burlywood;
+}
+
+/*regla a un selector*/
+h2 {
+    color:brown !important;
+}
+
+/*regla para un ID*/
+#mih2 {
+    color:red;    
+}
+
+/*clase*/
+.mih2Clase {
+    color:green;
+}
+
+/*
+    0-estilo inline
+    1-id
+    2-clase
+    3-selector
+    !important 
+*/
+
+.cajaExterna {
+    margin: 5px 10px; /*no son incluido en el calculo del tamaño de la caja, si el box-sizing es border-box*/
+    border: 2px solid red;
+    padding: 25px;
+    background-color: aqua;
+    width: 200px;
+    box-sizing: border-box; /*content-box | border-box*/;
+}
+
+.cajaInterna {
+    margin: 10px 5px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(212, 255, 0);
+}
+
+.cajaExterna .cajaInterna p {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.caja {
+    display: inline-block; /*no luedo dar width y height*/
+    width: 50px;
+    height:50px ;
+    font-size: 2em;
+}
+
+.container {
+    margin-left: 15px;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.circulo {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.otro {
+    border-radius: 50% 10% 50% 15%;
+}
+
+.rojo {
+    background-color: red;
+}
+.verde {
+    background-color: green;
+}
+.blanco {
+    background-color: #ffffff;
+}
+.azul {
+    background-color: rgb(0, 64, 255);
+}

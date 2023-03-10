@@ -1,0 +1,44 @@
+table thead tr:first-child{
+    font-size: 25px;
+}
+
+/*el último tr del tbody*/
+table tbody tr:last-child {
+    text-transform: lowercase !important;
+}
+/*elk primer tr del tbody*/
+table tbody tr:first-child {
+    text-transform: lowercase;
+}
+/*filas pares*/
+table tbody tr:nth-child(even) {
+    background-color: yellow;
+    font-size: 27px;
+}
+table tbody tr:nth-child(odd) {
+    background-color: rgb(85, 255, 0);
+    text-transform: uppercase;
+}
+
+/*pseudoelementos ::*/
+.link {
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 200px;
+    background-color: wheat;
+}
+
+.link p::first-letter {
+    font-size: 50px;
+}
+
+.link p::after {
+    content: '**';
+}
+#parrafo::first-line {
+    background: pink;
+}
+#parrafo::first-letter {
+    background: pink;
+}
+

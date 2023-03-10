@@ -1,0 +1,23 @@
+.positions {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+}
+.positionsRelativeWrapper {
+    width: 500px;
+    background-color: aqua;
+    height: 300px;
+    position: relative;
+}
+
+.positionsAbsolute  {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

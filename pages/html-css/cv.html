@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <!-- <link rel="stylesheet" href="../css/cv.styles.css"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .cv {
+            background-color: beige;
+            /* border-radius: 5%; */
+        }
+
+        .personal {
+            padding: 10px;
+        }
+        .personal_left {
+            display: inline-block;
+            margin: 5px;
+            width: 58%;
+        }
+        .personal_right{
+            margin: 5px;
+            display: inline-block;
+            width: 35%;
+        }
+
+        .personal_left h1{
+            color: orangered;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .personal_left_datos {
+            color: brown;
+        }
+
+        .personal_right img{
+            padding-top: 25px;
+            width: 80%;
+            border-radius: 10%;
+        }
+
+        .personal hr{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        #l1 {
+            height: 5px;
+            background-color: pink;
+        }
+        #l2 {
+            height: 15px;
+            background-color: orange;
+        }
+        #l3 {
+            height: 10px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <main class="cv">
+        <section class="personal">
+            <hr id="l1">
+            <hr id="l2">
+            <hr id="l3">
+            <div class="personal_left">
+                <h1>
+                    victor manuel sanchez cotillas
+                </h1>
+                <div class="personal_left_datos">
+                    <p>920938475</p>
+                    <p>C/Don Quijote n°121</p>
+                    <p>Arquitecurasanchez@gmail.com</p>
+                    <p>Arquitecurasanchez.wordpress.com</p>
+                </div>
+            </div>
+            <div class="personal_right">
+                <img src="../img/foto.png">
+            </div>
+        </section>
+        <section class="formacion">
+            <div class="formacion_experiencia">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h2>Formación Académica</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Doctorado en arquitectura</h3>
+                        </td>
+                        <td>
+                            <span class="formacion_experiencia_date">2015 - 2020</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>En la universidad de OXford</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="formacion_experiencia">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Formación Académica</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Doctorado en arquitectura</h3>
+                        </td>
+                        <td>
+                            <span class="formacion_experiencia_date">2015 - 2020</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>En la universidad de OXford</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="formacion_experiencia">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Formación extra Académica</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Doctorado en arquitectura</h3>
+                        </td>
+                        <td>
+                            <span class="formacion_experiencia_date">2015 - 2020</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod consectetur.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="formacion_experiencia">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Experiencia</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="formacion_experiencia_date">2015 - 2020 | </span> 
+                            <span class="formacion_experiencia_descripcion">Arquitecto Jefe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h3>Banco Santander Madrid, Espáña.</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>Diseño de la nueva sede de este banca en Madrid</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
