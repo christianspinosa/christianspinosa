@@ -16,8 +16,14 @@
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" maxlength="50">
         
-        <button onclick="agregarPersona()">
+        <button onclick="agregarPersona()"
+            id="btnAgregar">
             Agregar
+        </button>
+        <button class="ocultarBoton" 
+            id="btnActualizar"
+            onclick="actualizarPersona()">
+            Actualizar
         </button>
     </section>
     <section>
