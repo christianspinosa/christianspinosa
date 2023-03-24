@@ -40,3 +40,14 @@ Selector por ID:
  2 -> #id
  3 -> clase
 */
+
+/* proyecto de integracion*/
+
+.titulo {
+
+    text-align: center;
+    color:rgb(54, 38, 190);
+    font-size: 40px;
+    font-weight: normal;
+}
+
