@@ -83,7 +83,7 @@ h1{
 .titulo-con-imagen {
   background-image: url("/imgs/trabajoIntegracionfondo.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto auto;
 
 
   text-align: center;
