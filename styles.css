@@ -43,6 +43,12 @@ Selector por ID:
 
 /* proyecto de integracion*/
 
+h1{
+
+  margin-bottom: .0rem;
+}
+
+
 .titulo {
 
     text-align: center;
@@ -74,8 +80,22 @@ Selector por ID:
 }
 
 
+.titulo-con-imagen {
+  background-image: url("/imgs/trabajoIntegracionfondo.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+
+  text-align: center;
+  font-size: 3rem; /* Cambia el tamaño de fuente según lo necesites */
+  padding: 10px 0; /* Ajusta el espaciado interno según lo necesites */
+}
+
 
 /* botones proyecto integracion*/
+
+
+
 
 :root {
     --primary-color: #3b99fd; /* Establece el valor predeterminado para la variable primary-color */
@@ -94,3 +114,5 @@ Selector por ID:
 
 
 /* botones proyecto integracion*/
+
+/* proyecto de integracion*/
