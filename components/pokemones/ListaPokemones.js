@@ -1,3 +1,5 @@
+
+
 function ListadoPokemonesComponents(props) {
 
     let {sprites} = props;
@@ -6,24 +8,40 @@ function ListadoPokemonesComponents(props) {
         sprites = [];
     }
     
+ 
     
-    let html = `<table class="table">
-        <thead>
-            <tr>
-                
-                <th scope="col">Pokemon 1</th>
-                <th scope="col">Pokemon 2</th>
-                <th scope="col">Pokemon 3</th>
-            </tr>
-        </thead>
-        <tbody>
-        ${sprites.map(x=>UserRow(x)).join(' ')}
-        
-        </tbody>
-        </table>
+    let html = `<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+
+    <!-- Indicadores del carrusel -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Imágenes del carrusel -->
+    <div class="carousel-inner">
+    ${sprites.map(x=>UserRow(x)).join(' ')}
+    </div>
+
+    <!-- Controles del carrusel -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
        `
 
     document.getElementById('userList').innerHTML = html;
+
+
+
+    
 }
 
 function doVoid() {
@@ -31,12 +49,20 @@ function doVoid() {
 }
 
 function UserRow(user) {
-    const html = `<tr>
-        <th scope="row"><img src="${user.back_default}"/></th>
-        <td><img src="${user.other.dream_world.front_default}"/></td>
-        <td><img src="${user.other.home.front_default}"/></td>
-     
-    </tr>`;
+    const html = `
+    <div class="carousel-item active">
+    <img src="${user.other.home.front_default}" alt="Imagen 2" width="100%" height="400" >
+</div>
+<div class="carousel-item">
+    <img src="${user.front_default}" alt="Imagen 3" width="100%" height="400" >
+</div>
+<div class="carousel-item">
+    <img src="${user.other.dream_world.front_default}" alt="Imagen 4" width="100%" height="400" >
+</div>    
+<div class="carousel-item">
+    <img src="${user.back_default}" alt="Imagen 5" width="100%" height="400" >
+</div> 
+   `;
     return html
 }
 

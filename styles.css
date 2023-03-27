@@ -51,3 +51,46 @@ Selector por ID:
     font-weight: normal;
 }
 
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+  
+  }
+      nav {
+        
+        font-size: 1.3em; /* Cambia el tamaño de fuente a 1.2em */
+        display: flex;
+        justify-content: center; /* Centra horizontalmente el contenido */
+       
+      }
+    
+      nav a {
+        font-size: 1.3em; /* Cambia el tamaño de fuente a 1.2em */
+        
+      }
+
+      .container-fluid
+{ --bs-gutter-x: 62.5rem;
+}
+
+
+
+/* botones proyecto integracion*/
+
+:root {
+    --primary-color: #3b99fd; /* Establece el valor predeterminado para la variable primary-color */
+  }
+  
+  .btn-custom {
+    background-color: var(--primary-color); /* Usa la variable primary-color para establecer el color de fondo */
+    color: #fff; /* Establece el color del texto en blanco */
+    border-color: var(--primary-color); /* Usa la variable primary-color para establecer el color del borde */
+  }
+  
+  .btn-custom:hover {
+    background-color: #1cf5d8; /* Establece el color de fondo al pasar el cursor sobre el botón */
+    border-color: #1cf5d8; /* Establece el color del borde al pasar el cursor sobre el botón */
+  }
+
+
+/* botones proyecto integracion*/
