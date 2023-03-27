@@ -29,7 +29,7 @@ const extension = dominio[dominio.length - 1];
     let html = `<table class="table">
         <thead>
             <tr>
-                <th scope="col">cantidad de comentarios por dominio</th>
+                <th scope="col">cantidad de comentarios por dominio:</th>
             </tr>
         </thead>
         <tbody>
@@ -38,7 +38,7 @@ const extension = dominio[dominio.length - 1];
        </tr>
         </tbody>
         </table>
-        <td>Total de dominios diferentes:${cantidadElementos}</td>
+        <td><b>Total de dominios diferentes:${cantidadElementos}</b></td>
        `
 
     document.getElementById('userList').innerHTML = html;
@@ -48,7 +48,7 @@ function UserRow(valor) {
 
    
     const html = `<tr>
-        <td>la extension ${valor[0]} tiene ${valor[1]} registros </td>
+        <td>la extension .${valor[0]} tiene ${valor[1]} comentarios </td>
         
      `;
     return html
